@@ -1,0 +1,12 @@
+<h2>{{ data | json }}</h2>
+<hr>
+
+<h3>{{ data[1].nombre }}</h3>
+
+<hr>
+
+<h3 *ngFor="let item of data">
+
+  Nombre: {{item.nombre}}
+  Profesion: {{item.profesion}}
+</h3>
